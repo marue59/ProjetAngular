@@ -1,18 +1,3 @@
-<!---Que affichage
-Il sera chargé d'afficher une carte à partir d'un objet reçu.
-Il proposera un bouton en bas de la carte, qui ne fera rien pour le moment.
-
----
-Pensez à tronquer le texte de l'article (synopsis), afin de ne pas surcharger la carte
-
-Il disposera aussi un @Input() pour récupérer l'objet envoyé par son parent.
-Ils pourra ensuite être manipulé dans le HTML grâce au one way binding.
-
-Pensez à utiliser les pipes pour tronquer.
-tandis que *ngIf vous permettra de gérer les différents cas (ex : s'il y a un synopsis ou non). Dans tous les cas,
-utilisez les pipes pour tronquer le texte (avec slice) pour ne pas risquer de surcharger la carte
--->
-
 <div class="card" style="width: 30rem;">
   <img src="{{data.img}}" class="card-img-top">
   <div class="card-body">
