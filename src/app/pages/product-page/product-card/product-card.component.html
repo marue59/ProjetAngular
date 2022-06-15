@@ -2,8 +2,8 @@
   <img src="{{data.img}}" class="card-img-top">
   <div class="card-body">
     <h5 class="card-title">{{data.nom}}</h5>
-    <p *ngIf="data.synopsis" class="card-text">{{data.synopsis}}</p>
+    <p *ngIf="data.synopsis" class="card-text">{{data.synopsis | slice : 0:140}} ...</p>
     <p *ngIf="data.annee" class="card-text">{{data.annee}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button routerLink="/products/{{data.id}}" class="btn btn-primary">Détails</button>
   </div>
 </div>

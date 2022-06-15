@@ -1,0 +1,9 @@
+<div class="card">
+  <img src="{{product.img}}" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{product.nom}}</h5>
+    <p *ngIf="product.synopsis" class="card-text">{{product.synopsis}}</p>
+    <p *ngIf="product.annee" class="card-text">{{product.annee}}</p>
+    <button routerLink="/products/{{product.id}}" class="btn btn-primary">Détails</button>
+  </div>
+</div>
