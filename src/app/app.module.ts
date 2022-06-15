@@ -10,6 +10,7 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductListComponent } from './pages/product-page/product-list/product-list.component';
 import { ProductCardComponent } from './pages/product-page/product-card/product-card.component';
+import { DetailPageComponent } from './pages/detail-page/detail-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProductCardComponent } from './pages/product-page/product-card/product-
     HomePageComponent,
     ProductListComponent,
     ProductCardComponent,
+    DetailPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
