@@ -1,14 +1,1 @@
-<!---ProductListComponent est chargé
-d'afficher le composant ProductCardComponent,
-qui lui affiche les informations de l'article.
-
-Son but est de récupérer la liste reçue, et d'appeler le composant product-card autant de fois que
-nécessaire pour afficher les cartes de chaque élément.
-
-Puisque son parent va lui passer des infos, il aura besoin @Input() pour les récupérer ! En l'occurence, il
-récupérera une liste.
-La directive *ngFor vous sera utile pour afficher une carte pour chaque élément de la liste. Il passera chaque
-objet à son enfant.
-
--->
 <div class="d-flex justify-content-center m-5"><app-product-card *ngFor="let item of data" [data]="item"></app-product-card></div>
