@@ -1,27 +1,31 @@
-# Mediateque
+# MEDIATEQUE
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+Ce projet est généré avec [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 
-## Development server
+## Présentation:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ceci est le ReadMe de l'application Mediatèque. Ce document vous permettra de faire fonctionner cette application.
+Ce application permet de consulter les albums et les films disponible.
+Ce projet est géré par git.
 
-## Code scaffolding
+## Utilisation :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ne pas oublier de charger au demarrage npm
 
-## Build
+```
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Prérequis:
 
-## Running unit tests
+*bibliothèques JDK version 11.0.9
+*NodeJs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies utilisées :
 
-## Running end-to-end tests
+*Angular
+*Vscode
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Membres de l'équipe de développement :
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Marie Defretin
