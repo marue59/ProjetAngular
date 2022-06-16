@@ -4,6 +4,7 @@
     <h5 class="card-title">{{data.nom}}</h5>
     <p *ngIf="data.synopsis" class="card-text">{{data.synopsis | slice : 0:140}} ...</p>
     <p *ngIf="data.annee" class="card-text">{{data.annee}}</p>
-    <button routerLink="/products/{{data.id}}" class="btn btn-primary">Détails</button>
+    <button *ngIf="data.synopsis" routerLink="/products/films/{{data.id}}" class="btn btn-primary">Détails</button>
+    <button *ngIf="data.artiste" routerLink="/products/albums/{{data.id}}" class="btn btn-primary">Détails</button>
   </div>
 </div>
