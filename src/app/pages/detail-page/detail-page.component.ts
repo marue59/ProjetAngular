@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 // import { ProductPageComponent } from '../product-page/product-page.component';
 
@@ -29,7 +29,7 @@ export class DetailPageComponent implements OnInit {
   product!: Film | Album;
 
   constructor(
-    private routeur: RouterOutlet,
+    private routeur: Router,
     private route: ActivatedRoute,
     private albumService: AlbumService,
     private filmService: FilmService
@@ -44,6 +44,7 @@ export class DetailPageComponent implements OnInit {
   }
 */
   ngOnInit(): void {
+    const type = this.route.snapshot.paramMap.get('type');
     const id = this.route.snapshot.paramMap.get('id');
   }
 
@@ -59,7 +60,7 @@ export class DetailPageComponent implements OnInit {
     });
   }
 
-  setSuscribe(type: string | null, id: string | null) {
+  private setSuscribe(type: string | null, id: string | null) {
     if (id && type === 'albums') {
       // rajouter le +id permet de caster la chaine de caractere en nombre
       this.suscribeAlbum(+id);
