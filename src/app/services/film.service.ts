@@ -31,4 +31,8 @@ export class FilmService {
   updateFilm(film: Film): Observable<Film> {
     return this.httpClient.put<Film>(`${this.apiUrl}/films/${film.id}`, film);
   }
+
+  deleteFilm(id: number): Observable<Film> {
+    return this.httpClient.delete<Film>(`${this.apiUrl}/films/${id}`);
+  }
 }
